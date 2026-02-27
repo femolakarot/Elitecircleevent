@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowUp } from "lucide-react";
-import wsLogo from "figma:asset/3abd7bb38ef2137fe04ded38e67d9a3debbcc35e.png";
+import wsLogo from "../../assets/3abd7bb38ef2137fe04ded38e67d9a3debbcc35e.png";
 
 export function Footer() {
   return (

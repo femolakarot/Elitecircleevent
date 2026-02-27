@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import svgPaths from "../../imports/svg-1x9azbz691";
-import img3DRenderBg from "figma:asset/4e685114e3f605c2602459ba39a1323ad2ba8056.png";
-import imgRobotFigure from "figma:asset/9bd75428d3e464c523759e2198ffc6b8a416ebec.png";
-import imgRobotHead from "figma:asset/cbe3b422a4efd26e1adf3e6f830824e8b8d28c30.png";
+import img3DRenderBg from "../../assets/4e685114e3f605c2602459ba39a1323ad2ba8056.png";
+import imgRobotFigure from "../../assets/9bd75428d3e464c523759e2198ffc6b8a416ebec.png";
+import imgRobotHead from "../../assets/cbe3b422a4efd26e1adf3e6f830824e8b8d28c30.png";
 
 /* ── SVG Icons ── */
 
