@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Mic, Star } from "lucide-react";
-import imgOluwafemi from "figma:asset/3a129ec13a8990e799880530018cfa085bd0c4dd.png";
-import imgTopeOni from "figma:asset/84a66ce2b0e91c2cff9d001be5fe09755f39378a.png";
+import imgOluwafemi from "../../assets/3a129ec13a8990e799880530018cfa085bd0c4dd.png";
+import imgTopeOni from "../../assets/84a66ce2b0e91c2cff9d001be5fe09755f39378a.png";
 
 const speakers = [
   {

@@ -1,7 +1,7 @@
 import svgPaths from "./svg-1x9azbz691";
-import img3DRenderTechnoBackgroundWithMaleFigureCodingDesign1 from "figma:asset/4e685114e3f605c2602459ba39a1323ad2ba8056.png";
-import imgGeminiGeneratedImageAmikubamikubamik2 from "figma:asset/9bd75428d3e464c523759e2198ffc6b8a416ebec.png";
-import img116685293 from "figma:asset/cbe3b422a4efd26e1adf3e6f830824e8b8d28c30.png";
+import img3DRenderTechnoBackgroundWithMaleFigureCodingDesign1 from "../assets/4e685114e3f605c2602459ba39a1323ad2ba8056.png";
+import imgGeminiGeneratedImageAmikubamikubamik2 from "../assets/9bd75428d3e464c523759e2198ffc6b8a416ebec.png";
+import img116685293 from "../assets/cbe3b422a4efd26e1adf3e6f830824e8b8d28c30.png";
 
 function Elements() {
   return (
