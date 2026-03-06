@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Cpu, Palette, Lightbulb, Zap } from "lucide-react";
+import { Cpu, Palette, Lightbulb, Zap, Users, Sparkles } from "lucide-react";
 
 const features = [
   {
@@ -107,6 +107,51 @@ export function AboutSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* About Whitespace Creatorverse */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-20 text-center"
+        >
+          <h2
+            className="text-white mb-5"
+            style={{ fontFamily: "Poppins, sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 600, lineHeight: 1.2 }}
+          >
+            Powered by <span className="text-[#E8491D]">Whitespace Elite Circle</span>
+          </h2>
+          <p
+            className="text-gray-400 max-w-2xl mx-auto"
+            style={{ fontFamily: "Poppins, sans-serif", fontSize: "15px", fontWeight: 300, lineHeight: 1.8 }}
+          >
+            At Whitespace Elitecircle, we have a vision to gather creatives from different walks of life to learn, earn, and collaborate through community building and networking.
+          </p>
+          <p
+            className="text-gray-400 max-w-2xl mx-auto mt-4"
+            style={{ fontFamily: "Poppins, sans-serif", fontSize: "15px", fontWeight: 300, lineHeight: 1.8 }}
+          >
+            This Whitespace Event, powered by Whitespace Elite Circle, brings together bold thinkers, creative leaders, and AI innovators to explore what becomes possible when intelligence meets imagination.
+          </p>
+          <p
+            className="text-gray-400 max-w-2xl mx-auto mt-4"
+            style={{ fontFamily: "Poppins, sans-serif", fontSize: "15px", fontWeight: 300, lineHeight: 1.8 }}
+          >
+            Join us for an immersive experience designed to challenge your perspective and expand how you approach the future of creative work.
+          </p>
+          <motion.a
+            href="https://www.whitespacecreatorverse.com/elite"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.98 }}
+            className="inline-flex items-center justify-center gap-2 mt-6 px-6 py-3 bg-[#E8491D] text-white rounded hover:bg-[#d13d14] transition-colors duration-300"
+            style={{ fontFamily: "Poppins, sans-serif", fontSize: "14px", fontWeight: 500 }}
+          >
+            Learn more about Elite Circle
+          </motion.a>
+        </motion.div>
       </div>
     </section>
   );

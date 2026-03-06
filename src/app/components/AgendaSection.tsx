@@ -3,12 +3,12 @@ import { Clock, Mic2, PanelTop, Coffee, Wrench, Users } from "lucide-react";
 
 const agenda = [
   { time: "11:00 AM", title: "Doors Open & Networking", description: "Arrive, connect with fellow creatives, and get settled.", type: "general", icon: Users },
-  { time: "11:30 AM", title: "Opening Keynote: The Creative's Dilemma", description: "Oluwafemi sets the stage for the conversation about AI's role in creative industries.", type: "keynote", icon: Mic2 },
-  { time: "12:15 PM", title: "AI Tools for Creatives: A Live Demo", description: "Tope Oni showcases cutting-edge AI tools transforming design, writing, and content creation.", type: "talk", icon: Wrench },
-  { time: "1:00 PM", title: "Panel: Will AI Replace Creatives?", description: "An open discussion featuring diverse perspectives from designers, developers, and AI experts.", type: "panel", icon: PanelTop },
-  { time: "2:00 PM", title: "Lunch & Creative Showcase", description: "Enjoy refreshments while exploring creative works by local digital artists.", type: "break", icon: Coffee },
-  { time: "3:00 PM", title: "Workshop: Future-Proofing Your Craft", description: "Hands-on session on integrating AI into your creative workflow effectively.", type: "workshop", icon: Wrench },
-  { time: "4:30 PM", title: "Closing Remarks & Networking", description: "Final thoughts, community building, and next steps for the Whitespace movement.", type: "general", icon: Users },
+  { time: "11:10 AM", title: "Opening Keynote: The Creative's Dilemma", description: "Oluwafemi sets the stage for the conversation about AI's role in creative industries.", type: "keynote", icon: Mic2 },
+  { time: "11:30 AM", title: "Leveraging on the AI Revolution as a Creative I", description: "Tope Oni discusses how to make the most of AI tools in the different aspects of creative work.", type: "talk", icon: Wrench },
+  { time: "12:15 PM", title: "Panel Session: Leveraging on the AI Revolution as a Creative II (Q&A Included)", description: "An open discussion featuring diverse perspectives from designers, developers, and AI experts.", type: "panel", icon: PanelTop },
+  { time: "1:15 PM", title: "Break", description: "Enjoy refreshments and connect with fellow attendees.", type: "break", icon: Coffee },
+  { time: "1:30 PM", title: "Workshop: The Practicality of AI Tools", description: "Hands-on session on integrating AI into your creative workflow effectively.", type: "workshop", icon: Wrench },
+  { time: "2:30 PM", title: "Closing Remarks & Networking", description: "Final thoughts, community building, and next steps for the Whitespace movement.", type: "general", icon: Users },
 ];
 
 export function AgendaSection() {

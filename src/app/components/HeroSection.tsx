@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import svgPaths from "../../imports/svg-1x9azbz691";
-import img3DRenderBg from "../../assets/4e685114e3f605c2602459ba39a1323ad2ba8056.png";
 import imgRobotFigure from "../../assets/9bd75428d3e464c523759e2198ffc6b8a416ebec.png";
 import imgRobotHead from "../../assets/cbe3b422a4efd26e1adf3e6f830824e8b8d28c30.png";
+import imgHeroBg from "../../assets/16fa8aed74dd94db5230447c6669009f54db865a.png";
 
 /* ── SVG Icons ── */
 
@@ -186,9 +186,9 @@ export function HeroSection() {
         style={{ y: bgY, scale: bgScale }}
       >
         <img
-          src={img3DRenderBg}
+          src={imgHeroBg}
           alt=""
-          className="absolute w-[120%] max-w-none h-auto min-h-full object-cover blur-[21px] opacity-[0.54]"
+          className="absolute w-[120%] max-w-none h-auto min-h-full object-cover blur-[11px] opacity-[0.54] translate-y-[300px]"
         />
       </motion.div>
 
@@ -377,7 +377,7 @@ export function HeroSection() {
             lineHeight: 1.8,
           }}
         >
-          As a creative, will Artificial Intelligence take your place, or you would use it to stand out in your niche?
+          As a creative, are you competing with Artificial or collaborating with it?
         </motion.p>
 
         {/* ── Countdown Timer ── */}
@@ -452,7 +452,9 @@ export function HeroSection() {
         >
           {/* Primary — pulsing glow */}
           <motion.a
-            href="#register"
+            href="https://luma.com/t8ej2ur6"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.96 }}
             className="relative px-8 py-3.5 bg-[#E8491D] text-white rounded overflow-hidden group"
@@ -474,7 +476,9 @@ export function HeroSection() {
           </motion.a>
 
           <motion.a
-            href="#about"
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Elite%20Circle%20Event%3A%20AI%20%26%20the%20Creative&dates=20260418T110000/20260418T140000&ctz=Africa%2FLagos&details=Join%20Whitespace%20Elite%20Circle%20for%20AI%20%26%20the%20Creative.&location=Cafe%20One%20Lekki%2C%20Admiralty%20Way%2C%20Lagos%2C%20Nigeria"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.96 }}
             className="px-8 py-3.5 border border-[#E8491D] text-white rounded hover:bg-[#E8491D]/10 transition-colors duration-300"
@@ -485,7 +489,7 @@ export function HeroSection() {
               lineHeight: "21px",
             }}
           >
-            Learn More
+            Add to Calendar
           </motion.a>
         </motion.div>
       </motion.div>

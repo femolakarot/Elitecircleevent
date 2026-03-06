@@ -18,14 +18,14 @@ export function Footer() {
                 className="text-white"
                 style={{ fontFamily: "Poppins, sans-serif", fontSize: "14px", fontWeight: 600, letterSpacing: "0.05em" }}
               >
-                Whitespace Creatorverse
+                Whitespace Elite Circle
               </span>
             </div>
             <p
               className="text-gray-500 max-w-xs"
               style={{ fontFamily: "Poppins, sans-serif", fontSize: "13px", fontWeight: 300, lineHeight: 1.7 }}
             >
-              A community dedicated to empowering creatives with tools, knowledge, and connections for the digital age.
+              Bringing creators together from all walks of life to learn, earn, collaborate and network through community bulding starting from Africa.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export function Footer() {
                 className="text-gray-500"
                 style={{ fontFamily: "Poppins, sans-serif", fontSize: "13px", fontWeight: 300 }}
               >
-                hello@whitespace.io
+                elite@whitespacecreatorverse.com
               </span>
               <span
                 className="text-gray-500"
@@ -74,17 +74,21 @@ export function Footer() {
                 Lagos, Nigeria
               </span>
               <div className="flex gap-3 mt-2">
-                {["Twitter", "Instagram", "LinkedIn"].map((social) => (
-                  <motion.a
-                    key={social}
-                    href="#"
-                    whileHover={{ y: -2 }}
-                    className="px-3 py-1.5 border border-white/5 rounded text-gray-600 hover:text-[#E8491D] hover:border-[#E8491D]/20 transition-colors"
-                    style={{ fontFamily: "Poppins, sans-serif", fontSize: "11px", fontWeight: 400 }}
-                  >
-                    {social}
-                  </motion.a>
-                ))}
+                <motion.a
+                  href="https://www.instagram.com/whitespace_elite_circle?igsh=MTR4Y2wyZTI1d3lxNw=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ y: -2 }}
+                  className="px-3 py-1.5 border border-white/5 rounded text-gray-600 hover:text-[#E8491D] hover:border-[#E8491D]/20 transition-colors flex items-center gap-1.5"
+                  style={{ fontFamily: "Poppins, sans-serif", fontSize: "11px", fontWeight: 400 }}
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                  Instagram
+                </motion.a>
               </div>
             </div>
           </div>

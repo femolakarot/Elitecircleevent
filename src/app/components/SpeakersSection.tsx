@@ -2,23 +2,33 @@ import { motion } from "motion/react";
 import { Mic, Star } from "lucide-react";
 import imgOluwafemi from "../../assets/3a129ec13a8990e799880530018cfa085bd0c4dd.png";
 import imgTopeOni from "../../assets/84a66ce2b0e91c2cff9d001be5fe09755f39378a.png";
+import imgRichardEnoch from "../../assets/91ddf75524bbd817b1084da45ed0126fd0661650.png";
 
 const speakers = [
   {
-    name: "Oluwafemi",
+    name: "Oluwafemi Akingbola",
     role: "Lead Creative",
     org: "Whitespace Creatorverse",
     tag: "Host",
     image: imgOluwafemi,
-    bio: "A visionary creative leader driving innovation at the intersection of design and technology.",
+    bio: "A multidisciplinary Visual communicator and serial entrepreneur shaping Africa's creative-tech future through immersive design and innovation.",
   },
   {
-    name: "Tope Oni",
+    name: "Babatope Oni",
     role: "CTO / Co-Founder",
     org: "GICBANC",
     tag: "Speaker",
     image: imgTopeOni,
-    bio: "Technologist and entrepreneur pioneering fintech solutions with AI-first thinking.",
+    bio: "A seasoned software architect and tech executive driving innovation, product growth, and enterprise-scale impact across fintech and mobility.",
+  },
+  {
+    name: "Richard Enoch",
+    role: "Creative Lead & Product Designer",
+    org: "",
+    tag: "Speaker",
+    image: imgRichardEnoch,
+    imageClass: "scale-[1.55] object-center opacity-90 brightness-[0.72] contrast-110 group-hover:scale-[1.65]",
+    bio: "A creative lead and product designer leveraging design thinking, emerging technologies, and AI to craft impactful digital experiences.",
   },
 ];
 
@@ -53,7 +63,7 @@ export function SpeakersSection() {
         </motion.div>
 
         {/* Speakers Grid — matching Figma screenshot */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {speakers.map((speaker, index) => (
             <motion.div
               key={speaker.name}
@@ -69,18 +79,10 @@ export function SpeakersSection() {
                 <img
                   src={speaker.image}
                   alt={speaker.name}
-                  className="w-full h-full object-cover object-top grayscale opacity-80 group-hover:opacity-95 group-hover:scale-105 transition-all duration-700"
+                  className={`w-full h-full object-cover object-top grayscale opacity-80 group-hover:opacity-95 group-hover:scale-105 transition-all duration-700 ${speaker.imageClass ?? ""}`}
                 />
                 {/* Bottom fade into card background */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-transparent" />
-
-                {/* Subtle "Text" watermark like the Figma design */}
-                <span
-                  className="absolute bottom-16 right-5 text-white/[0.08]"
-                  style={{ fontFamily: "Poppins, sans-serif", fontSize: "14px", fontWeight: 400 }}
-                >
-                  Text
-                </span>
 
                 {/* Tag badge — positioned bottom-right of image area */}
                 <div className="absolute bottom-4 right-5">

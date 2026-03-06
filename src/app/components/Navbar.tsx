@@ -25,15 +25,16 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <motion.div
+        <motion.a
+          href="/"
           className="flex items-center gap-2.5"
           whileHover={{ scale: 1.03 }}
         >
           <img src={wsLogo} alt="Whitespace" className="w-8 h-8 rounded-full object-contain invert" />
           <span className="text-white" style={{ fontFamily: "Poppins, sans-serif", fontSize: "14px", fontWeight: 600, letterSpacing: "0.05em" }}>
-            Whitespace
+            Whitespace Elite Circle
           </span>
-        </motion.div>
+        </motion.a>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">

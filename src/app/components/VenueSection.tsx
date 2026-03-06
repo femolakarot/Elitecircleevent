@@ -97,7 +97,7 @@ export function VenueSection() {
               {[
                 { icon: MapPin, title: "Address", value: "Cafe One Lekki, Admiralty Way, Lekki Phase 1, Lagos" },
                 { icon: Clock, title: "Doors Open", value: "11:00 AM WAT" },
-                { icon: Users, title: "Capacity", value: "200 seats (limited availability)" },
+                { icon: Users, title: "Capacity", value: "100 seats (limited availability)" },
               ].map((detail) => (
                 <motion.div
                   key={detail.title}
