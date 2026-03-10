@@ -2,18 +2,77 @@ import { motion } from "motion/react";
 import { Clock, Mic2, PanelTop, Coffee, Wrench, Users } from "lucide-react";
 
 const agenda = [
-  { time: "11:00 AM", title: "Doors Open & Networking", description: "Arrive, connect with fellow creatives, and get settled.", type: "general", icon: Users },
-  { time: "11:10 AM", title: "Opening Keynote: The Creative's Dilemma", description: "Oluwafemi sets the stage for the conversation about AI's role in creative industries.", type: "keynote", icon: Mic2 },
-  { time: "11:30 AM", title: "Leveraging on the AI Revolution as a Creative I", description: "Tope Oni discusses how to make the most of AI tools in the different aspects of creative work.", type: "talk", icon: Wrench },
-  { time: "12:15 PM", title: "Panel Session: Leveraging on the AI Revolution as a Creative II (Q&A Included)", description: "An open discussion featuring diverse perspectives from designers, developers, and AI experts.", type: "panel", icon: PanelTop },
-  { time: "1:15 PM", title: "Break", description: "Enjoy refreshments and connect with fellow attendees.", type: "break", icon: Coffee },
-  { time: "1:30 PM", title: "Workshop: The Practicality of AI Tools", description: "Hands-on session on integrating AI into your creative workflow effectively.", type: "workshop", icon: Wrench },
-  { time: "2:30 PM", title: "Closing Remarks & Networking", description: "Final thoughts, community building, and next steps for the Whitespace movement.", type: "general", icon: Users },
+  {
+    time: "11:00 AM",
+    title: "Doors Open & Networking",
+    description: "Arrive, connect with fellow creatives, and get settled.",
+    type: "general",
+    icon: Users,
+  },
+  {
+    time: "11:10 AM",
+    title: "Opening Keynote: The Creative's Dilemma",
+    description:
+      "Oluwafemi sets the stage for the conversation about AI's role in creative industries.",
+    type: "keynote",
+    icon: Mic2,
+  },
+  {
+    time: "11:30 AM",
+    title: "Leveraging on the AI Revolution as a Creative I",
+    description:
+      "Babatope discusses how to make the most of AI tools in the different aspects of creative work.",
+    type: "talk",
+    icon: Wrench,
+  },
+  {
+    time: "12:15 PM",
+    title:
+      "Panel Session: Leveraging on the AI Revolution as a Creative II (Q&A Included)",
+    description:
+      "An open discussion featuring diverse perspectives from designers, developers, and AI experts.",
+    type: "panel",
+    icon: PanelTop,
+  },
+  {
+    time: "1:15 PM",
+    title: "Break",
+    description: "Enjoy refreshments and connect with fellow attendees.",
+    type: "break",
+    icon: Coffee,
+  },
+  {
+    time: "1:30 PM",
+    title: "Workshop: The Practicality of AI Tools",
+    description:
+      "Hands-on session on integrating AI into your creative workflow effectively.",
+    type: "workshop",
+    icon: Wrench,
+  },
+  {
+    time: "2:30 PM",
+    title: "Elite Circle Community Tournament Finals",
+    description:
+      "10weeks coming tournament finalists clash fo the ultimate price",
+    type: "general",
+    icon: Users,
+  },
+  {
+    time: "4:00 PM",
+    title: "Closing Remarks & Networking",
+    description:
+      "Final thoughts, community building, and next steps for the Whitespace movement.",
+    type: "general",
+    icon: Users,
+  },
 ];
 
 export function AgendaSection() {
   return (
-    <section id="agenda" className="relative py-24 bg-[#0d0d0d] overflow-hidden">
+    <section
+      id="agenda"
+      className="relative py-24 bg-[#0d0d0d] overflow-hidden"
+    >
       {/* Background glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-[#E8491D]/[0.02] rounded-full blur-[150px] pointer-events-none" />
 
@@ -28,13 +87,23 @@ export function AgendaSection() {
         >
           <span
             className="text-[#E8491D] uppercase mb-3 block"
-            style={{ fontFamily: "Poppins, sans-serif", fontSize: "11px", fontWeight: 500, letterSpacing: "0.2em" }}
+            style={{
+              fontFamily: "Poppins, sans-serif",
+              fontSize: "11px",
+              fontWeight: 500,
+              letterSpacing: "0.2em",
+            }}
           >
             Event Schedule
           </span>
           <h2
             className="text-white"
-            style={{ fontFamily: "Poppins, sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 600, lineHeight: 1.2 }}
+            style={{
+              fontFamily: "Poppins, sans-serif",
+              fontSize: "clamp(28px, 3.5vw, 42px)",
+              fontWeight: 600,
+              lineHeight: 1.2,
+            }}
           >
             The <span className="text-[#E8491D]">Agenda</span>
           </h2>
@@ -82,20 +151,35 @@ export function AgendaSection() {
                       </div>
                       <div className="flex items-center gap-2 text-gray-500">
                         <Clock size={11} />
-                        <span style={{ fontFamily: "Poppins, sans-serif", fontSize: "11px", fontWeight: 400 }}>
+                        <span
+                          style={{
+                            fontFamily: "Poppins, sans-serif",
+                            fontSize: "11px",
+                            fontWeight: 400,
+                          }}
+                        >
                           {item.time}
                         </span>
                       </div>
                     </div>
                     <h3
                       className="text-white group-hover:text-[#E8491D] transition-colors duration-300"
-                      style={{ fontFamily: "Poppins, sans-serif", fontSize: "15px", fontWeight: 500 }}
+                      style={{
+                        fontFamily: "Poppins, sans-serif",
+                        fontSize: "15px",
+                        fontWeight: 500,
+                      }}
                     >
                       {item.title}
                     </h3>
                     <p
                       className="text-gray-500 mt-1"
-                      style={{ fontFamily: "Poppins, sans-serif", fontSize: "13px", fontWeight: 300, lineHeight: 1.6 }}
+                      style={{
+                        fontFamily: "Poppins, sans-serif",
+                        fontSize: "13px",
+                        fontWeight: 300,
+                        lineHeight: 1.6,
+                      }}
                     >
                       {item.description}
                     </p>

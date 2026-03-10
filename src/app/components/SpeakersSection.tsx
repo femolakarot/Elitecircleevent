@@ -7,7 +7,7 @@ import imgRichardEnoch from "../../assets/91ddf75524bbd817b1084da45ed0126fd06616
 const speakers = [
   {
     name: "Oluwafemi Akingbola",
-    role: "Lead Creative",
+    role: "Creative Director / Founder",
     org: "Whitespace Creatorverse",
     tag: "Host",
     image: imgOluwafemi,
@@ -27,14 +27,18 @@ const speakers = [
     org: "",
     tag: "Speaker",
     image: imgRichardEnoch,
-    imageClass: "scale-[1.55] object-center opacity-90 brightness-[0.72] contrast-110 group-hover:scale-[1.65]",
+    imageClass:
+      "scale-[1.55] object-center opacity-90 brightness-[0.72] contrast-110 group-hover:scale-[1.65]",
     bio: "A creative lead and product designer leveraging design thinking, emerging technologies, and AI to craft impactful digital experiences.",
   },
 ];
 
 export function SpeakersSection() {
   return (
-    <section id="speakers" className="relative py-24 bg-[#0a0a0a] overflow-hidden">
+    <section
+      id="speakers"
+      className="relative py-24 bg-[#0a0a0a] overflow-hidden"
+    >
       {/* Background accents */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[300px] h-[300px] bg-[#E8491D]/[0.03] rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute top-0 right-0 w-[200px] h-[200px] bg-[#E8491D]/[0.02] rounded-full blur-[100px] pointer-events-none" />
@@ -50,13 +54,23 @@ export function SpeakersSection() {
         >
           <span
             className="text-[#E8491D] uppercase mb-3 block"
-            style={{ fontFamily: "Poppins, sans-serif", fontSize: "11px", fontWeight: 500, letterSpacing: "0.2em" }}
+            style={{
+              fontFamily: "Poppins, sans-serif",
+              fontSize: "11px",
+              fontWeight: 500,
+              letterSpacing: "0.2em",
+            }}
           >
             Featured Voices
           </span>
           <h2
             className="text-white"
-            style={{ fontFamily: "Poppins, sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 600, lineHeight: 1.2 }}
+            style={{
+              fontFamily: "Poppins, sans-serif",
+              fontSize: "clamp(28px, 3.5vw, 42px)",
+              fontWeight: 600,
+              lineHeight: 1.2,
+            }}
           >
             Meet the <span className="text-[#E8491D]">Speakers</span>
           </h2>
@@ -88,9 +102,17 @@ export function SpeakersSection() {
                 <div className="absolute bottom-4 right-5">
                   <span
                     className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-[#E8491D] text-white rounded-sm"
-                    style={{ fontFamily: "Poppins, sans-serif", fontSize: "12px", fontWeight: 500 }}
+                    style={{
+                      fontFamily: "Poppins, sans-serif",
+                      fontSize: "12px",
+                      fontWeight: 500,
+                    }}
                   >
-                    {speaker.tag === "Host" ? <Mic size={12} /> : <Star size={12} />}
+                    {speaker.tag === "Host" ? (
+                      <Mic size={12} />
+                    ) : (
+                      <Star size={12} />
+                    )}
                     {speaker.tag}
                   </span>
                 </div>
@@ -103,25 +125,43 @@ export function SpeakersSection() {
 
                 <h3
                   className="text-white mt-2"
-                  style={{ fontFamily: "Poppins, sans-serif", fontSize: "20px", fontWeight: 600 }}
+                  style={{
+                    fontFamily: "Poppins, sans-serif",
+                    fontSize: "20px",
+                    fontWeight: 600,
+                  }}
                 >
                   {speaker.name}
                 </h3>
                 <p
                   className="text-[#E8491D] mb-0.5"
-                  style={{ fontFamily: "Poppins, sans-serif", fontSize: "13px", fontWeight: 500 }}
+                  style={{
+                    fontFamily: "Poppins, sans-serif",
+                    fontSize: "13px",
+                    fontWeight: 500,
+                  }}
                 >
                   {speaker.role}
                 </p>
                 <p
                   className="text-gray-500 mb-4"
-                  style={{ fontFamily: "Poppins, sans-serif", fontSize: "12px", fontWeight: 400, letterSpacing: "0.03em" }}
+                  style={{
+                    fontFamily: "Poppins, sans-serif",
+                    fontSize: "12px",
+                    fontWeight: 400,
+                    letterSpacing: "0.03em",
+                  }}
                 >
                   {speaker.org}
                 </p>
                 <p
                   className="text-gray-400"
-                  style={{ fontFamily: "Poppins, sans-serif", fontSize: "13px", fontWeight: 300, lineHeight: 1.7 }}
+                  style={{
+                    fontFamily: "Poppins, sans-serif",
+                    fontSize: "13px",
+                    fontWeight: 300,
+                    lineHeight: 1.7,
+                  }}
                 >
                   {speaker.bio}
                 </p>
