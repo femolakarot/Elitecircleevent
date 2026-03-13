@@ -16,7 +16,7 @@ const speakers = [
   {
     name: "Babatope Oni",
     role: "CTO / Co-Founder",
-    org: "GICBANC",
+    org: "GIGBANC",
     tag: "Speaker",
     image: imgTopeOni,
     bio: "A seasoned software architect and tech executive driving innovation, product growth, and enterprise-scale impact across fintech and mobility.",
